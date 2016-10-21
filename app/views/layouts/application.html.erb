@@ -9,6 +9,14 @@
   </head>
 
   <body>
-    <%= yield %>
+  	<header>
+  		<nav>
+  			<%= render '/layouts/nav'%>
+  		</nav>
+  	</header>
+  	<section>
+  		<%= yield %>
+  	</section>
+    
   </body>
 </html>
