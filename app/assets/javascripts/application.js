@@ -20,6 +20,6 @@
 
 
 $(document).ready(function(){
-	$('.slider').slider({full_width: true, height: 500});
+	$('.slider').slider({full_width: true, height: 550});
 });
 

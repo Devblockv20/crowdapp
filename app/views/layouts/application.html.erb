@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CrowdFundingApp</title>
+    <title>CrowdFundingApp <%= yield(:title)%></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,13 +10,15 @@
 
   <body>
   	<header>
-  		<nav>
-  			<%= render '/layouts/nav'%>
-  		</nav>
+  		<%= render '/layouts/nav'%>
   	</header>
   	<section>
   		<%= yield %>
   	</section>
+  	<div class= "clear"></div>
+  	<footer>
+  		<%= render '/layouts/footer'%>
+  	</footer>
     
   </body>
 </html>
