@@ -5,5 +5,20 @@ $secondary-color: color("yellow") !default;
 @import 'materialize';
 
 
+/*user_profiles show page*/
 
+.zero-bottom-margin{
+	margin-bottom: 0px !important;
+}
 
+.zero-side-padding{
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+.tabs .tab a{
+	color: #4a148c !important;
+}
+
+.indicator{
+	background-color: #4a148c !important;
+}

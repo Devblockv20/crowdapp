@@ -23,3 +23,8 @@ $(document).ready(function(){
 	$('.slider').slider({full_width: true, height: 550});
 });
 
+
+$(document).ready(function(){
+	$('ul.tabs').tabs();
+});
+
