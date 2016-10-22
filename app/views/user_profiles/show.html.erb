@@ -1,6 +1,7 @@
+<% provide(:title, "| #{@user_profile.name}")%>
 <div class="row zero-bottom-margin">
 	<div class="col s12 zero-side-padding">
-		<div class="card z-depth-0">
+		<div class="card z-depth-0 card-bottom-margin">
 			<div class="card-content black-text z-depth-0">
 				<div class=" center-align">
 					<%=	image_tag @user_profile.avatar.url, class: "circle responsive-img"%>
@@ -11,11 +12,11 @@
 					<div id="bio">
 						<p>Bio: <%= @user_profile.bio %></p>
 					</div>
-					<div id="location">
+					<div id="location" class="material-icons-font">
 						<i class="Tiny material-icons">location_on</i>
 						<%= @user_profile.location %>
 					</div>
-					<div id="create_at">
+					<div id="create_at" class="material-icons-font">
 						<i class="Tiny material-icons">date_range</i>
 						Joined At <%= @user_profile.created_at.strftime("%B %Y")%>
 					</div>
@@ -28,12 +29,12 @@
 <div class="row">
 	<div class="col s12 zero-side-padding">
 		<ul class="tabs">
-			<li class="tab col s3 flow-text"><a class="active"  href="#test1">Home</a></li>
-			<li class="tab col s3 flow-text"><a href="#test2">Projects</a></li>
-			<li class="tab col s3 flow-text"><a href="#test3">backed by you</a></li>
-			<li class="tab col s3 flow-text"><a href="#test4">followers</a></li>
-			<li class="tab col s3 flow-text"><a href="#test4">following</a></li>
-			<li class="tab col s3 flow-text"><a href="#test4">about</a></li>
+			<li class="tab col s3"><a class="active"  href="#test1">Home</a></li>
+			<li class="tab col s3"><a href="#test2">Projects</a></li>
+			<li class="tab col s3"><a href="#test3">Projects backed by you</a></li>
+			<li class="tab col s3"><a href="#test4">followers</a></li>
+			<li class="tab col s3"><a href="#test4">following</a></li>
+			<li class="tab col s3"><a href="#test4">about</a></li>
 		</ul>
 	</div>
 	<div id="test1" class="col s12">hello</div>

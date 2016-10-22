@@ -1,5 +1,5 @@
 class UserProfilesController < ApplicationController
-
+before_filter :redirect_cancel, only: [:create, :update]
 before_action :find_user_profiles, only: [:show, :edit, :update, :destroy]
 
   def new
@@ -46,5 +46,9 @@ before_action :find_user_profiles, only: [:show, :edit, :update, :destroy]
 
   def find_user_profiles
   	@user_profile = UserProfile.find(params[:id])
+  end
+
+  def redirect_cancel
+    redirect_to user_profile_path if params[:cancel]
   end
 end

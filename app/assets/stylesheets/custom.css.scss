@@ -15,10 +15,20 @@ $secondary-color: color("yellow") !default;
 	padding-right: 0px !important;
 	padding-left: 0px !important;
 }
+
+.card-bottom-margin{
+	margin-bottom: 0px !important; 
+}
+
 .tabs .tab a{
 	color: #4a148c !important;
+}
+
+.material-icons-font{
+	color: #bdbdbd;
 }
 
 .indicator{
 	background-color: #4a148c !important;
 }
+
