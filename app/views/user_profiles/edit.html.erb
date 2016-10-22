@@ -13,7 +13,7 @@
 					<%= render(:partial => "form", :locals => {:f => f}) %>
 
 					<%=	f.button "Update Setting", class: "btn waves-effect waves-light"%>
-					<%= button_tag t('buttons.cancel'), type: "submit", name: "cancel", value: true %>
+					<%= button_tag t('buttons.cancel'), type: "submit", name: "cancel", value: true, :class => "btn waves-effect waves-light" %>
 					<% end %>
 
 				</div>

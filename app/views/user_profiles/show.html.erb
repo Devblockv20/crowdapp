@@ -12,13 +12,13 @@
 					<div id="bio">
 						<p>Bio: <%= @user_profile.bio %></p>
 					</div>
-					<div id="location" class="material-icons-font">
-						<i class="Tiny material-icons">location_on</i>
-						<%= @user_profile.location %>
-					</div>
 					<div id="create_at" class="material-icons-font">
 						<i class="Tiny material-icons">date_range</i>
 						Joined At <%= @user_profile.created_at.strftime("%B %Y")%>
+					</div>
+					<div id="location" class="material-icons-font">
+						<i class="Tiny material-icons">location_on</i>
+						<%= @user_profile.location %>
 					</div>
 				</div>
 			</div>
@@ -31,7 +31,7 @@
 		<ul class="tabs">
 			<li class="tab col s3"><a class="active"  href="#test1">Home</a></li>
 			<li class="tab col s3"><a href="#test2">Projects</a></li>
-			<li class="tab col s3"><a href="#test3">Projects backed by you</a></li>
+			<li class="tab col s3"><a href="#test3">Projects you backed</a></li>
 			<li class="tab col s3"><a href="#test4">followers</a></li>
 			<li class="tab col s3"><a href="#test4">following</a></li>
 			<li class="tab col s3"><a href="#test4">about</a></li>
