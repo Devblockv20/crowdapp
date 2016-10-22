@@ -1,0 +1,20 @@
+<div class="input-field">
+	<%=	f.text_field :name ,class: "validate"%>
+	<%=	f.label	:name, "Name"	%>
+</div>
+
+<div class="field">
+	<%=	f.label	:avatar, "Profile Image"%>
+	<%= f.file_field :avatar%>
+</div>
+
+<div class="input-field">
+	<%=	f.text_field :location, placeholder: "Eg: Ethiopia, AA"%>
+	<%=	f.label	:location, "Location"%>
+</div>
+
+<div class="input-field">
+	<i class="material-icons prefix">mode_edit</i>
+	<%= f.text_field :bio, class: "materialize-textarea", length:"140" %>
+	<%= f.label :bio, "bio"%>
+</div>

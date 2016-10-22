@@ -1,4 +1,4 @@
-class UserProfileController < ApplicationController
+class UserProfilesController < ApplicationController
 
 before_action :find_user_profiles, only: [:show, :edit, :update, :destroy]
 

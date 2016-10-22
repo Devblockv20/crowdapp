@@ -1,0 +1,18 @@
+<%provide(:title, "| Profile SetUp")%>
+<div class="row"> 
+	<div class="col s6 offset-s3">
+		<div class="card">
+			<div class="card-content black-text">
+				<span class="card-title black-text"> Profile Set Up</span>
+				<p>One More Step To Create Your Account </p>
+
+				<%=	form_for(@user_profile)	do	|f|	%>
+				<%= render(:partial => "form", :locals => {:f => f}) %>
+				<div class="actions center flow-text">
+					<span><%= f.button "Create Profile", :class => "btn waves-effect waves-light btn-large"%></span>
+				</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
